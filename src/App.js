@@ -1,11 +1,12 @@
 import React from 'react';
-import './Components/Navbar/NavBar.css';
 import NavBar from './Components/Navbar/NavBar';
 import './App.css'
+import Banner from './Components/Banner/Banner';
 function App() {
   return (
     <div className="App">
       <NavBar/>
+      <Banner/>
     </div>
   );
 }
