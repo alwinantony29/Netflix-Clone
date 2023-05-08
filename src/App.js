@@ -1,17 +1,15 @@
-import React from 'react';
-import NavBar from './Components/Navbar/NavBar';
-import './App.css'
-import {action, animation} from './urls'
-import Banner from './Components/Banner/Banner';
-import RowPost from './Components/RowPost/RowPost';
+import React from "react";
+import Home from "./Components/Home/home";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 function App() {
   return (
-    <div className="App">
-      <NavBar/>
-      <Banner/>
-      <RowPost url={animation} title='Animation' />
-      <RowPost url={action} title='Action' isSmall/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
